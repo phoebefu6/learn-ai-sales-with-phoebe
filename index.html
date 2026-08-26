@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="AI made sending free, so replying got expensive. Average cold reply rates fell while volume exploded - and sellers who genuinely partner with AI are 3.7x more likely to hit quota. Two tracks: leaders get the forecast, enablement and compliance rails; reps run one real deal end to end with a live outreach simulator.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="learn ai sales with phoebe - a two-track course on selling with AI">
+<meta property="og:description" content="AI made sending free, so replying got expensive. Two tracks: leaders get forecast, enablement and compliance rails; reps run one real deal end to end with a live outreach simulator.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-ai-sales-with-phoebe/">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-ai-sales-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="learn ai sales with phoebe - a two-track course on selling with AI">
+<meta name="twitter:description" content="AI made sending free, so replying got expensive. Leaders and reps, two tracks, one live outreach simulator.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-ai-sales-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>learn ai sales with phoebe - a two-track course on selling with AI</title>
+<link rel="stylesheet" href="assets/style.css?v=1">
+<style>
+  .stats-row { display: flex; gap: 2.4rem; margin-top: 1.5rem; flex-wrap: wrap; }
+  .stat b { display: block; font-size: 2.1rem; font-weight: 800; line-height: 1.05; font-variant-numeric: tabular-nums; }
+  .stat span { font-size: .72rem; opacity: .85; text-transform: uppercase; letter-spacing: .09em; font-weight: 600; }
+
+  .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .course-card {
+    border: 1px solid var(--hairline);
+    border-top: 4px solid var(--diff, var(--indigo));
+    border-radius: var(--radius);
+    padding: 1.2rem 1.3rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--ink);
+    background: #fff;
+    transition: box-shadow .15s ease, border-color .15s ease, transform .15s ease;
+    position: relative;
+  }
+  .course-card:hover { border-color: var(--indigo-soft); border-top-color: var(--diff, var(--indigo)); box-shadow: 0 8px 28px rgba(46,42,39,.14); transform: translateY(-3px); }
+  .course-card .cicon { font-size: 1.7rem; line-height: 1; }
+  .course-card .cnum { font-size: .72rem; font-weight: 700; color: var(--indigo); text-transform: uppercase; letter-spacing: .1em; }
+  .course-card h3 { font-size: 1.05rem; font-weight: 800; line-height: 1.3; }
+  .course-card p { font-size: .85rem; color: var(--muted); flex: 1; }
+  .course-card .meta { display: flex; gap: .4rem; flex-wrap: wrap; }
+
+  .diff-legend { display: flex; gap: 1rem; margin-top: 1.6rem; font-size: .74rem; color: var(--muted); font-weight: 600; flex-wrap: wrap; }
+  .diff-legend i { display: inline-block; width: .85rem; height: .35rem; border-radius: 999px; margin-right: .35rem; vertical-align: middle; }
+
+  .paths { margin-top: 2.6rem; }
+  .paths h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .3rem; }
+  .paths .plede { color: var(--muted); font-size: .92rem; margin-bottom: .8rem; }
+  .path { display: flex; gap: .55rem; align-items: center; padding: .75rem 0; border-bottom: .5px solid var(--hairline); flex-wrap: wrap; }
+  .path:last-child { border-bottom: none; }
+  .path b { min-width: 15.5rem; font-size: .9rem; }
+  .path .pstep { background: var(--indigo-50); color: var(--indigo); border-radius: 999px; padding: .16rem .68rem; font-weight: 700; font-size: .8rem; text-decoration: none; transition: all .12s ease; }
+  .path .pstep:hover { background: var(--indigo); color: #fff; }
+  .path .parr { color: var(--faint); font-weight: 700; }
+
+  .mm-section { margin-top: 1.6rem; }
+  .mm-section h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .2rem; }
+  .mm-section .mm-lede { color: var(--muted); font-size: .92rem; margin-bottom: .4rem; }
+  .mm-wrap { border: 1px solid var(--hairline); border-radius: var(--radius); background: linear-gradient(180deg,#fff,#F7F2EC); padding: .6rem; overflow-x: auto; }
+  .mm-svg { width: 100%; height: auto; display: block; max-width: 60rem; margin: 0 auto; min-width: 34rem; }
+  .mm-link { cursor: pointer; text-decoration: none; }
+  .mm-node rect { transition: opacity .15s ease, filter .15s ease; }
+  .mm-node text { pointer-events: none; }
+  .mm-edge { transition: opacity .15s ease; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Sales with Phoebe</div>
+    <h1>Two tracks into selling that still sounds human</h1>
+    <p class="sub">AI made sending free, so replying got expensive. Platform-average cold reply rates fell from about 5.1% to about 3.4% in two years while volume went vertical - and over the same period Gartner found that sellers who genuinely partner with AI are 3.7x more likely to hit quota, that AI hands each seller back nearly five hours a week, and that 72% of sales organisations reinvest none of it. The tool is not the intervention. The habit is. A leader track gives VPs and CROs the evidence, the forecast rebuild, the enablement model and the compliance rails. A rep track runs one real deal end to end - eight named accounts at Cadence, anchor account Northwind Logistics - with a live outreach simulator on the key pages where you watch one email climb from 2.8% to 19.2% predicted reply, and find out for yourself why the sixth toggle never helps.</p>
+    <div class="stats-row">
+      <div class="stat"><b data-count="2">2</b><span>tracks</span></div>
+      <div class="stat"><b data-count="16">16</b><span>sessions</span></div>
+      <div class="stat"><b data-count="5">5</b><span>levers per email</span></div>
+      <div class="stat"><b data-count="45">45</b><span>min per session</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>The leader track 🤝 <span style="font-size:.85rem;font-weight:600;color:var(--muted)">· for VPs of Sales, CROs &amp; founders with a team · 6 x 45 min · decisions first</span></h2>
+      <p class="plede">Judgment mode: what AI genuinely changes in a sales org, what the research supports versus what the vendor deck claims, how to rebuild a forecast people believe, how coaching changes when every call is recorded and transcribed, the compliance rails that decide whether your team may send at all, and a rollout that survives comp season.</p>
+    </div>
+    <div class="course-grid">
+      <a class="course-card" href="courses/a1-what-ai-changes.html" style="--diff:#34D399">
+        <span class="cicon">📉</span>
+        <span class="cnum">Leader 1 · easy</span>
+        <h3>What AI actually changes in a sales org</h3>
+        <p>Five hours back per seller, 72% reinvested in nothing, 3.7x quota for the ones who partner well - and the three places AI quietly destroys buyer trust.</p>
+        <span class="meta"><span class="pill amber">▶ Leaders start here</span></span>
+      </a>
+      <a class="course-card" href="courses/a2-the-evidence.html" style="--diff:#34D399">
+        <span class="cicon">⚖️</span>
+        <span class="cnum">Leader 2 · easy</span>
+        <h3>The evidence, in plain English</h3>
+        <p>What actually lifts pipeline versus what merely lifts activity - benchmark reply rates, next-best-action research, and the 2030 buyer prediction nobody puts on a slide.</p>
+        <span class="meta"><span class="pill light">Signal versus vendor claim</span></span>
+      </a>
+      <a class="course-card" href="courses/a3-forecast-you-can-trust.html" style="--diff:#FBBF24">
+        <span class="cicon">🔮</span>
+        <span class="cnum">Leader 3 · medium</span>
+        <h3>A forecast people actually believe</h3>
+        <p>AI signals versus rep judgment, sandbagging, the override log, and the Goodhart trap waiting for any team that manages the forecast instead of the deals.</p>
+        <span class="meta"><span class="pill light">The override discipline</span></span>
+      </a>
+      <a class="course-card" href="courses/a4-enablement-and-ramp.html" style="--diff:#FBBF24">
+        <span class="cicon">🎧</span>
+        <span class="cnum">Leader 4 · medium</span>
+        <h3>Enablement, coaching and ramp</h3>
+        <p>Coaching from recorded calls without turning it into surveillance, consent that holds up, and cutting new-rep ramp with a searchable record instead of shadowing.</p>
+        <span class="meta"><span class="pill light">Consent before insight</span></span>
+      </a>
+      <a class="course-card" href="courses/a5-compliance-rails.html" style="--diff:#FB923C">
+        <span class="cicon">🛡️</span>
+        <span class="cnum">Leader 5 · deciding</span>
+        <h3>The compliance rails</h3>
+        <p>PDPA and DNC, CAN-SPAM, CASL, GDPR legitimate interest, call-recording consent and AI disclosure - the org-level version of what every rep needs by default.</p>
+        <span class="meta"><span class="pill light">Written policy exercise</span></span>
+      </a>
+      <a class="course-card" href="courses/a6-rollout-and-comp.html" style="--diff:#FB923C">
+        <span class="cicon">🧭</span>
+        <span class="cnum">Leader 6 · deciding</span>
+        <h3>Rollout, adoption and comp</h3>
+        <p>Stack choices you can undo, adoption that is not mandated, metrics that do not get gamed, and where the five saved hours per rep are supposed to go.</p>
+        <span class="meta"><span class="pill light">Strategy session</span></span>
+      </a>
+    </div>
+
+    <div class="diff-legend">
+      <span><i style="background:#34D399"></i>easy - orientation</span>
+      <span><i style="background:#FBBF24"></i>medium - real decisions</span>
+      <span><i style="background:#FB923C"></i>deciding - commit to a position</span>
+      <span><i style="background:#F87171"></i>hardest - assemble everything</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>The rep track 📞 <span style="font-size:.85rem;font-weight:600;color:var(--muted)">· for AEs, SDRs &amp; founders who sell · 10 x 45 min · one running deal</span></h2>
+      <p class="plede">Hands-on mode: you are an AE at Cadence with eight named accounts and one anchor - Northwind Logistics, five weeks into a new Jurong DC. Ten sessions take that account from a row in a list to a closed-won record someone else can read. Every session ships something you use on Monday.</p>
+    </div>
+    <div class="course-grid">
+      <a class="course-card" href="courses/b1-the-reps-ai-loop.html" style="--diff:#34D399">
+        <span class="cicon">🔁</span>
+        <span class="cnum">Rep 1 · easy</span>
+        <h3>The rep's AI loop</h3>
+        <p>The five-stage deal loop, the trust line AI must not cross, and the five levers of an email that earns a reply - with the simulator you will use all term.</p>
+        <span class="meta"><span class="pill amber">▶ Start here</span><span class="pill light">▶ Live sim</span></span>
+      </a>
+      <a class="course-card" href="courses/b2-research-and-prospecting.html" style="--diff:#34D399">
+        <span class="cicon">🔎</span>
+        <span class="cnum">Rep 2 · easy</span>
+        <h3>Research and prospecting</h3>
+        <p>ICP that excludes people, trigger-event hunting in six minutes flat, account briefs that fit on one screen, and killing the rows that will never buy.</p>
+        <span class="meta"><span class="pill light">Build the list</span></span>
+      </a>
+      <a class="course-card" href="courses/b3-outreach-that-lands.html" style="--diff:#FBBF24">
+        <span class="cicon">✉️</span>
+        <span class="cnum">Rep 3 · medium</span>
+        <h3>Outreach that does not read as generated</h3>
+        <p>2.8% to 19.2% on the lever ladder, the eight tells buyers clock in two seconds, the token anti-lever, and the rails that decide whether you may send.</p>
+        <span class="meta"><span class="pill amber">▶ Signature session</span><span class="pill light">▶ Live sim</span></span>
+      </a>
+      <a class="course-card" href="courses/b4-call-prep.html" style="--diff:#FBBF24">
+        <span class="cicon">📋</span>
+        <span class="cnum">Rep 4 · medium</span>
+        <h3>Call prep and discovery questions</h3>
+        <p>A 15-minute prep that beats an hour of browsing, question banks that are not interrogations, and the hypothesis you bring in and let them break.</p>
+        <span class="meta"><span class="pill light">Prep pack</span></span>
+      </a>
+      <a class="course-card" href="courses/b5-live-call-and-capture.html" style="--diff:#FBBF24">
+        <span class="cicon">🎙️</span>
+        <span class="cnum">Rep 5 · medium</span>
+        <h3>The live call and what you capture</h3>
+        <p>Consent first, notes that do not steal your attention, recaps sent within the hour, and the difference between a transcript and an understanding.</p>
+        <span class="meta"><span class="pill light">Recap template</span></span>
+      </a>
+      <a class="course-card" href="courses/b6-objections-and-positioning.html" style="--diff:#FB923C">
+        <span class="cicon">🥊</span>
+        <span class="cnum">Rep 6 · deciding</span>
+        <h3>Objections and competitive positioning</h3>
+        <p>Rehearsing against a simulated buyer without learning to bluff, honest competitor comparisons, and the objections that are really a missing stakeholder.</p>
+        <span class="meta"><span class="pill light">Roleplay drill</span></span>
+      </a>
+      <a class="course-card" href="courses/b7-proposal-and-follow-up.html" style="--diff:#FB923C">
+        <span class="cicon">📄</span>
+        <span class="cnum">Rep 7 · deciding</span>
+        <h3>Proposal, pricing and follow-up</h3>
+        <p>What AI may draft and what it may never touch, the follow-up cadence that captures most replies by day 10, and the promise you sign your name to.</p>
+        <span class="meta"><span class="pill light">The trust line, applied</span></span>
+      </a>
+      <a class="course-card" href="courses/b8-crm-hygiene.html" style="--diff:#FB923C">
+        <span class="cicon">🗃️</span>
+        <span class="cnum">Rep 8 · deciding</span>
+        <h3>CRM hygiene AI can actually keep</h3>
+        <p>Fields that earn their existence, auto-captured next steps, dedupe and decay, and writing records for the person who inherits your territory.</p>
+        <span class="meta"><span class="pill light">Record standard</span></span>
+      </a>
+      <a class="course-card" href="courses/b9-pipeline-review.html" style="--diff:#F87171">
+        <span class="cicon">📊</span>
+        <span class="cnum">Rep 9 · hardest</span>
+        <h3>Pipeline review from the rep side</h3>
+        <p>Stage definitions that mean something, the deals you should kill, honest commit calls, and surviving an AI forecast that disagrees with you.</p>
+        <span class="meta"><span class="pill light">Your own number</span></span>
+      </a>
+      <a class="course-card" href="courses/b10-capstone-one-deal.html" style="--diff:#F87171">
+        <span class="cicon">🏁</span>
+        <span class="cnum">Rep 10 · hardest</span>
+        <h3>Capstone: one deal, end to end</h3>
+        <p>Northwind from cold row to closed record - list, email, call, objection, proposal, CRM, forecast - scored against every lever and rail in the track.</p>
+        <span class="meta"><span class="pill light">Assemble everything</span></span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="paths">
+      <h2>Choose your path 🧭</h2>
+      <p class="plede">Everyone starts at session 1 of their track. These are the shortcuts if you only have a few evenings.</p>
+      <div class="path"><b>👔 Sales leader (decide and rollout)</b>
+        <a class="pstep" href="courses/a1-what-ai-changes.html">a1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a2-the-evidence.html">a2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a3-forecast-you-can-trust.html">a3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a4-enablement-and-ramp.html">a4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a5-compliance-rails.html">a5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a6-rollout-and-comp.html">a6</a>
+      </div>
+      <div class="path"><b>📞 Rep (the full deal)</b>
+        <a class="pstep" href="courses/b1-the-reps-ai-loop.html">b1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b2-research-and-prospecting.html">b2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b3-outreach-that-lands.html">b3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b4-call-prep.html">b4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b5-live-call-and-capture.html">b5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b6-objections-and-positioning.html">b6</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b7-proposal-and-follow-up.html">b7</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b8-crm-hygiene.html">b8</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b9-pipeline-review.html">b9</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b10-capstone-one-deal.html">b10</a>
+      </div>
+      <div class="path"><b>⚡ SDR fast lane (outbound only)</b>
+        <a class="pstep" href="courses/b1-the-reps-ai-loop.html">b1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b2-research-and-prospecting.html">b2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b3-outreach-that-lands.html">b3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b7-proposal-and-follow-up.html">b7</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b8-crm-hygiene.html">b8</a>
+      </div>
+      <div class="path"><b>🧑‍💼 Founder who sells (both hats)</b>
+        <a class="pstep" href="courses/b1-the-reps-ai-loop.html">b1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b3-outreach-that-lands.html">b3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b5-live-call-and-capture.html">b5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a5-compliance-rails.html">a5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a3-forecast-you-can-trust.html">a3</a>
+      </div>
+      <div class="path"><b>🚀 Full journey (lead AND sell)</b>
+        <a class="pstep" href="courses/a1-what-ai-changes.html">a1-a6</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b1-the-reps-ai-loop.html">b1-b10</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section mm-section">
+    <h2>The knowledge map 🧠</h2>
+    <p class="mm-lede">Both tracks at a glance - hover a session to spotlight its concepts, click any node to jump in.</p>
+    <div class="mm-wrap"><div id="mindmap"></div></div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>learn-ai-sales-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a> · taught from Gartner's B2B seller and buyer research, published 2025-2026 cold-email benchmark reports, and the outreach compliance regimes - PDPA and DNC, CAN-SPAM, CASL and GDPR</span>
+  </footer>
+</main>
+
+<script>
+window.MINDMAP_DATA = {
+  title: "Learn\nAI Sales",
+  centerColor: "#17140F",
+  sessions: [
+    { label: "What AI\nchanges", href: "courses/a1-what-ai-changes.html", color: "#34D399",
+      concepts: [
+        { label: "5 hours back, 72% wasted", href: "courses/a1-what-ai-changes.html" },
+        { label: "The trust line", href: "courses/a1-what-ai-changes.html" } ] },
+    { label: "The\nevidence", href: "courses/a2-the-evidence.html", color: "#34D399",
+      concepts: [
+        { label: "3.7x quota", href: "courses/a2-the-evidence.html" },
+        { label: "75% want humans by 2030", href: "courses/a2-the-evidence.html" } ] },
+    { label: "Forecast\nyou trust", href: "courses/a3-forecast-you-can-trust.html", color: "#FBBF24",
+      concepts: [
+        { label: "Signals vs judgment", href: "courses/a3-forecast-you-can-trust.html" },
+        { label: "The override log", href: "courses/a3-forecast-you-can-trust.html" } ] },
+    { label: "Enablement\n& ramp", href: "courses/a4-enablement-and-ramp.html", color: "#FBBF24",
+      concepts: [
+        { label: "Coaching, not surveillance", href: "courses/a4-enablement-and-ramp.html" },
+        { label: "Ramp on a real record", href: "courses/a4-enablement-and-ramp.html" } ] },
+    { label: "Compliance\nrails", href: "courses/a5-compliance-rails.html", color: "#FB923C",
+      concepts: [
+        { label: "PDPA · CAN-SPAM · CASL", href: "courses/a5-compliance-rails.html" },
+        { label: "Recording consent", href: "courses/a5-compliance-rails.html" } ] },
+    { label: "Rollout\n& comp", href: "courses/a6-rollout-and-comp.html", color: "#FB923C",
+      concepts: [
+        { label: "Adoption without mandate", href: "courses/a6-rollout-and-comp.html" },
+        { label: "Metrics that resist gaming", href: "courses/a6-rollout-and-comp.html" } ] },
+    { label: "The rep's\nAI loop", href: "courses/b1-the-reps-ai-loop.html", color: "#34D399",
+      concepts: [
+        { label: "The deal loop", href: "courses/b1-the-reps-ai-loop.html" },
+        { label: "Five levers", href: "courses/b1-the-reps-ai-loop.html" },
+        { label: "The 8-prospect sequence", href: "courses/b1-the-reps-ai-loop.html" } ] },
+    { label: "Research &\nprospecting", href: "courses/b2-research-and-prospecting.html", color: "#34D399",
+      concepts: [
+        { label: "ICP that excludes", href: "courses/b2-research-and-prospecting.html" },
+        { label: "Trigger hunting", href: "courses/b2-research-and-prospecting.html" } ] },
+    { label: "Outreach\nthat lands", href: "courses/b3-outreach-that-lands.html", color: "#FBBF24",
+      concepts: [
+        { label: "2.8% to 19.2%", href: "courses/b3-outreach-that-lands.html" },
+        { label: "The eight tells", href: "courses/b3-outreach-that-lands.html" },
+        { label: "The token anti-lever", href: "courses/b3-outreach-that-lands.html" } ] },
+    { label: "Call\nprep", href: "courses/b4-call-prep.html", color: "#FBBF24",
+      concepts: [
+        { label: "15-minute prep", href: "courses/b4-call-prep.html" },
+        { label: "Hypothesis, not script", href: "courses/b4-call-prep.html" } ] },
+    { label: "Live call\n& capture", href: "courses/b5-live-call-and-capture.html", color: "#FBBF24",
+      concepts: [
+        { label: "Consent first", href: "courses/b5-live-call-and-capture.html" },
+        { label: "Recap within the hour", href: "courses/b5-live-call-and-capture.html" } ] },
+    { label: "Objections &\npositioning", href: "courses/b6-objections-and-positioning.html", color: "#FB923C",
+      concepts: [
+        { label: "Rehearse, do not bluff", href: "courses/b6-objections-and-positioning.html" },
+        { label: "The missing stakeholder", href: "courses/b6-objections-and-positioning.html" } ] },
+    { label: "Proposal &\nfollow-up", href: "courses/b7-proposal-and-follow-up.html", color: "#FB923C",
+      concepts: [
+        { label: "Never auto-draft a promise", href: "courses/b7-proposal-and-follow-up.html" },
+        { label: "Most replies by day 10", href: "courses/b7-proposal-and-follow-up.html" } ] },
+    { label: "CRM\nhygiene", href: "courses/b8-crm-hygiene.html", color: "#FB923C",
+      concepts: [
+        { label: "Fields that earn their place", href: "courses/b8-crm-hygiene.html" },
+        { label: "Write for your successor", href: "courses/b8-crm-hygiene.html" } ] },
+    { label: "Pipeline\nreview", href: "courses/b9-pipeline-review.html", color: "#F87171",
+      concepts: [
+        { label: "Kill the zombie deals", href: "courses/b9-pipeline-review.html" },
+        { label: "Disagreeing with the model", href: "courses/b9-pipeline-review.html" } ] },
+    { label: "Capstone\none deal", href: "courses/b10-capstone-one-deal.html", color: "#F87171",
+      concepts: [
+        { label: "Northwind end to end", href: "courses/b10-capstone-one-deal.html" },
+        { label: "Scored on every rail", href: "courses/b10-capstone-one-deal.html" } ] }
+  ]
+};
+</script>
+<script src="assets/mindmap.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+</body>
+</html>

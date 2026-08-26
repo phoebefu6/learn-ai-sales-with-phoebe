@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Forecasts do not lie because the model is wrong. They lie because of sandbagging, happy ears and stage inflation. AI does not remove any of the three - it makes them measurable. Tonight: signals versus judgment, the override log, and the Goodhart trap waiting for any leader who scores accuracy alone.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="A forecast people actually believe - learn ai sales with phoebe">
+<meta property="og:description" content="Forecasts do not lie because the model is wrong. They lie because of sandbagging, happy ears and stage inflation. AI does not remove any of the three - it makes them measurable.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-ai-sales-with-phoebe/courses/a3-forecast-you-can-trust.html">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-ai-sales-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A forecast people actually believe - learn ai sales with phoebe">
+<meta name="twitter:description" content="Sandbagging, happy ears and stage inflation are human forces. AI makes them measurable, not absent. Plus the override log and the Goodhart trap.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-ai-sales-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Leader session 3 · A forecast people actually believe - learn ai sales with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-sales-with-phoebe</a> / Leader session 3 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Sales with Phoebe · Leader track · Session 3 of 6</div>
+    <h1>A forecast people <span class="accent">actually believe</span></h1>
+    <p class="sub">Every forecast you have ever received was shaped by three human forces before a single number reached your spreadsheet: reps protecting themselves, reps believing their champion, and reps calling a demo a deal. No AI forecasting product removes any of them. What AI does is make all three visible for the first time, which is useful and uncomfortable in equal measure. Tonight you rebuild the forecast around one contract: the model proposes, the rep disposes, and every override is logged with a reason. By the end of a quarter that log is the most valuable coaching artifact you own.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Leader track</span>
+      <span class="chip audience">VPs of Sales · CROs · RevOps</span>
+      <span class="chip audience">Bring last quarter's forecast</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:3">3-18 · Why forecasts lie</span>
+      <span class="a3" style="flex:4">18-40 · Rebuilding it with AI signals</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>What this session is for</h2>
+    </div>
+    <p class="lede">This is a leader session, so the output is a set of decisions rather than a set of tasks. By 40 minutes past you should have picked what your forecast is allowed to read, what stays a human call, how an override gets recorded, and which three metrics you score together so that nobody can quietly game one of them. The rep track handles the other side of the same problem: <strong>b9</strong> teaches your sellers how to disagree with a model honestly, and <strong>b8</strong> teaches them to keep the CRM clean enough for a model to read at all. If your data is bad, start there and come back.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A working definition of what your forecast model may read and what only a human knows, an override log you can start on Monday with four columns, exit criteria for two stages written in your own words, and the reason you must never compensate on forecast accuracy alone.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: WHY FORECASTS LIE ============ -->
+  <section class="section" id="why-forecasts-lie">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · the diagnosis</span>
+      <h2>Why the forecast lies, and it is not the model <span class="tag concept">8 min live</span></h2>
+    </div>
+    <p class="lede">Leaders buy forecasting tools to fix accuracy and are surprised when accuracy barely moves. The reason is that a forecast is not a measurement, it is a <em>negotiation</em> between a rep, a manager and a number that decides how the rest of the quarter will feel. Three human forces run through every one of them, they pull in different directions, and that is why the error never conveniently cancels out.</p>
+    <ul>
+      <li><strong>Sandbagging - protect the number.</strong> A rep who calls low and beats it looks like a hero. A rep who calls high and misses gets a performance conversation. The incentive is not subtle and it is entirely rational. It shows up as a commit that is suspiciously flat and a best case that never converts.</li>
+      <li><strong>Happy ears - believe the champion.</strong> "They love it, procurement is a formality." Your rep is not lying to you; they were told this by a human being who probably meant it. It shows up as high-confidence deals with one contact and no finance or legal thread.</li>
+      <li><strong>Stage inflation - a demo is not a deal.</strong> When stages are defined by activity ("we did the demo") rather than by evidence ("they confirmed budget and a decision date"), deals march forward on the calendar while standing still in reality. It shows up as rising stage age late in the funnel and a cliff of slips at quarter end.</li>
+    </ul>
+    <p>Watch what that looks like on one real deal. Northwind Logistics: five weeks into a new Jurong DC, three warehouse-ops reqs open, and on paper the best opportunity in the territory.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 374" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="One deal tracked across three points in a quarter, comparing the number the rep called, the number the model produced, and what was actually true, showing the three diverging until the deal slips to zero.">
+        <style>
+          .fdT { font: 700 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .fdS { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .92; }
+          .fdL { font: 700 11.5px Inter, sans-serif; fill: #2E2A27; letter-spacing: .06em; }
+          .fdK { font: 700 11.5px Inter, sans-serif; fill: #C0562A; letter-spacing: .06em; }
+          .fdB { font: 400 11.5px Inter, sans-serif; fill: #2B2723; }
+          .fdR { font: 400 11.5px Inter, sans-serif; fill: #991B1B; }
+          .fdN { font: 600 13px Inter, sans-serif; fill: #4A1D0C; }
+          .fdWire { stroke: #C0562A; stroke-width: 2.5; fill: none; marker-end: url(#fdHd); }
+        </style>
+        <defs>
+          <marker id="fdHd" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#C0562A"/>
+          </marker>
+        </defs>
+        <rect x="145" y="26" width="228" height="46" rx="8" fill="#2E2A27"/>
+        <text class="fdT" x="161" y="46">WEEK 2 · DISCOVERY</text>
+        <text class="fdS" x="161" y="64">the first call is done</text>
+        <rect x="388" y="26" width="228" height="46" rx="8" fill="#2E2A27"/>
+        <text class="fdT" x="404" y="46">WEEK 6 · DEMO DONE</text>
+        <text class="fdS" x="404" y="64">the team saw the product</text>
+        <rect x="631" y="26" width="228" height="46" rx="8" fill="#17140F"/>
+        <text class="fdT" x="647" y="46">QUARTER END</text>
+        <text class="fdS" x="647" y="64">the number is due</text>
+        <path class="fdWire" d="M373,49 L382,49"/>
+        <path class="fdWire" d="M616,49 L625,49"/>
+
+        <rect x="20" y="88" width="112" height="54" rx="8" fill="#F6F2ED" stroke="#C9BEB4" stroke-width="2"/>
+        <text class="fdL" x="34" y="120">REP CALLED</text>
+        <rect x="145" y="88" width="228" height="54" rx="8" fill="#F6F2ED" stroke="#C9BEB4" stroke-width="2"/>
+        <text class="fdB" x="161" y="111">Best case S$120k</text>
+        <text class="fdB" x="161" y="129">"they really love it"</text>
+        <rect x="388" y="88" width="228" height="54" rx="8" fill="#F6F2ED" stroke="#C9BEB4" stroke-width="2"/>
+        <text class="fdB" x="404" y="111">Commit S$120k</text>
+        <text class="fdB" x="404" y="129">moved up to commit</text>
+        <rect x="631" y="88" width="228" height="54" rx="8" fill="#F6F2ED" stroke="#C9BEB4" stroke-width="2"/>
+        <text class="fdB" x="647" y="111">Called S$120k</text>
+        <text class="fdB" x="647" y="129">the number never moved</text>
+
+        <rect x="20" y="152" width="112" height="54" rx="8" fill="#FBEDE5" stroke="#C0562A" stroke-width="2"/>
+        <text class="fdK" x="34" y="184">MODEL SAYS</text>
+        <rect x="145" y="152" width="228" height="54" rx="8" fill="#FBEDE5" stroke="#C0562A" stroke-width="2"/>
+        <text class="fdB" x="161" y="175">S$26k · 22% odds</text>
+        <text class="fdB" x="161" y="193">one contact, no finance</text>
+        <rect x="388" y="152" width="228" height="54" rx="8" fill="#FBEDE5" stroke="#C0562A" stroke-width="2"/>
+        <text class="fdB" x="404" y="175">S$44k · 37% odds</text>
+        <text class="fdB" x="404" y="193">activity is fresh again</text>
+        <rect x="631" y="152" width="228" height="54" rx="8" fill="#FBEDE5" stroke="#C0562A" stroke-width="2"/>
+        <text class="fdB" x="647" y="175">S$18k · 15% odds</text>
+        <text class="fdB" x="647" y="193">silent for 12 days</text>
+
+        <rect x="20" y="216" width="112" height="54" rx="8" fill="#2E2A27"/>
+        <text class="fdT" x="34" y="248">REALITY</text>
+        <rect x="145" y="216" width="228" height="54" rx="8" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="2"/>
+        <text class="fdR" x="161" y="239">one contact, and nobody</text>
+        <text class="fdR" x="161" y="257">from finance has seen it</text>
+        <rect x="388" y="216" width="228" height="54" rx="8" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="2"/>
+        <text class="fdR" x="404" y="239">the champion has just</text>
+        <text class="fdR" x="404" y="257">resigned, nobody knows</text>
+        <rect x="631" y="216" width="228" height="54" rx="8" fill="#991B1B"/>
+        <text class="fdT" x="647" y="239">CLOSED S$0 · SLIPPED</text>
+        <text class="fdS" x="647" y="257">budget moved to next year</text>
+
+        <rect x="20" y="292" width="14" height="14" rx="3" fill="#C0562A"/>
+        <text class="fdN" x="44" y="304">The rep's number never moved. The model's number moved three times. One of them was reading.</text>
+        <rect x="20" y="320" width="14" height="14" rx="3" fill="#C0562A"/>
+        <text class="fdN" x="44" y="332">AI removes none of the three human forces. It makes all three measurable, which is new.</text>
+        <rect x="20" y="348" width="14" height="14" rx="3" fill="#C0562A"/>
+        <text class="fdN" x="44" y="360">The gap between the called number and the model is the coaching conversation. Log it.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - one deal, three numbers, and the moment reality stopped agreeing with the commit</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The three forces, and the fingerprint each one leaves in your data<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>You cannot coach a force you cannot see. Here is what each leaves behind once a model is reading the same pipeline your reps are calling:</p>
+        <ul>
+          <li><strong>Sandbagging</strong> - commit consistently below the model, a best case that rarely converts, and a suspicious cluster of deals landing just over target.</li>
+          <li><strong>Happy ears</strong> - high rep confidence with single-threading, no finance or legal contact, and long gaps between meaningful replies from the buyer.</li>
+          <li><strong>Stage inflation</strong> - rising stage age at the late stages, deals sitting in negotiation with no pricing document, and a quarter-end cliff of slips.</li>
+        </ul>
+        <p>All three fingerprints are things a machine is genuinely good at counting. All three causes are things only a person can address. That split is the whole session.</p>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The most common failure is treating the model's number as the fix.</strong> A team installs a forecasting tool, the model calls S$26k, the rep calls S$120k, and the manager splits the difference at S$70k because it feels balanced. Nobody learned anything and the number is now wrong in a new way. The value was never the model's number. It was the question the disagreement forces: <em>what does one of us know that the other does not?</em></p>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: SIGNALS VS JUDGMENT ============ -->
+  <section class="section" id="signals-vs-judgment">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · the contract</span>
+      <h2>Signals versus judgment <span class="tag concept">10 min live</span></h2>
+    </div>
+    <p class="lede">An AI forecast reads a specific and quite short list: <strong>activity recency</strong>, <strong>stage age</strong>, <strong>multithreading</strong> (how many real contacts, in which functions), <strong>email and call sentiment</strong>, and <strong>historical conversion by stage</strong> for deals shaped like this one. That is it. Everything else it appears to know is one of those five wearing a nicer label. Now list what only a human knows: the champion resigned on Friday, procurement froze everything until the audit closes, the budget quietly moved to next year, the buyer intends to renew the incumbent and look at you next time. None of that exists in the CRM until a person puts it there.</p>
+    <p>So the contract is simple, and you should say it out loud in your next pipeline review: <strong>the model proposes, the rep disposes, and every override is logged with a reason.</strong> Not a dropdown of five tidy reasons. A sentence, in the rep's own words, about what they know that the model cannot see.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 414" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A forecast pipeline: five signals feed a model number, the rep overrides it with a written reason, that becomes the committed number, and the actual outcome feeds back into an override log that recalibrates the model.">
+        <style>
+          .pxT { font: 700 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .pxS { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .92; }
+          .pxK { font: 700 10.5px Inter, sans-serif; fill: #C0562A; letter-spacing: .08em; }
+          .pxKy { font: 700 10.5px Inter, sans-serif; fill: #2E2A27; letter-spacing: .08em; }
+          .pxG { font: 700 12.5px Inter, sans-serif; fill: #2E2A27; }
+          .pxB { font: 400 11.5px Inter, sans-serif; fill: #2B2723; }
+          .pxM { font: 400 11px Inter, sans-serif; fill: #7A7168; }
+          .pxN { font: 600 13px Inter, sans-serif; fill: #4A1D0C; }
+          .pxWire { stroke: #C0562A; stroke-width: 2.5; fill: none; marker-end: url(#pxHd); }
+          .pxFeed { stroke: #2E2A27; stroke-width: 2.5; fill: none; stroke-dasharray: 6 4; marker-end: url(#pxHdD); }
+        </style>
+        <defs>
+          <marker id="pxHd" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#C0562A"/>
+          </marker>
+          <marker id="pxHdD" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#2E2A27"/>
+          </marker>
+        </defs>
+        <rect x="20" y="60" width="200" height="142" rx="8" fill="#F6F2ED" stroke="#C9BEB4" stroke-width="2"/>
+        <text class="pxKy" x="36" y="84">WHAT THE MODEL READS</text>
+        <text class="pxB" x="36" y="108">Activity recency</text>
+        <text class="pxB" x="36" y="128">Stage age</text>
+        <text class="pxB" x="36" y="148">Multithreading</text>
+        <text class="pxB" x="36" y="168">Email and call sentiment</text>
+        <text class="pxB" x="36" y="188">Conversion by stage</text>
+        <path class="pxWire" d="M220,131 L244,131"/>
+
+        <rect x="250" y="76" width="170" height="110" rx="8" fill="#FBEDE5" stroke="#C0562A" stroke-width="2"/>
+        <text class="pxK" x="266" y="100">STEP 1</text>
+        <text class="pxG" x="266" y="122">MODEL NUMBER</text>
+        <text class="pxB" x="266" y="144">S$44k weighted</text>
+        <text class="pxB" x="266" y="162">37% probability</text>
+        <path class="pxWire" d="M420,131 L444,131"/>
+
+        <rect x="450" y="76" width="180" height="110" rx="8" fill="#FBEDE5" stroke="#C0562A" stroke-width="2"/>
+        <text class="pxK" x="466" y="100">STEP 2</text>
+        <text class="pxG" x="466" y="122">REP OVERRIDE</text>
+        <text class="pxB" x="466" y="144">S$0 - champion left</text>
+        <text class="pxB" x="466" y="162">a reason is required</text>
+        <path class="pxWire" d="M630,131 L654,131"/>
+
+        <rect x="660" y="76" width="200" height="110" rx="8" fill="#17140F"/>
+        <text class="pxS" x="676" y="100">STEP 3</text>
+        <text class="pxT" x="676" y="122">COMMITTED NUMBER</text>
+        <text class="pxS" x="676" y="144">the one you carry</text>
+        <text class="pxS" x="676" y="162">to the board</text>
+        <path class="pxWire" d="M760,186 L760,234"/>
+
+        <rect x="660" y="240" width="200" height="60" rx="8" fill="#2E2A27"/>
+        <text class="pxT" x="676" y="264">ACTUAL OUTCOME</text>
+        <text class="pxS" x="676" y="284">won, slipped or lost</text>
+        <path class="pxFeed" d="M660,270 L636,270"/>
+
+        <rect x="230" y="240" width="400" height="60" rx="8" fill="#F6F2ED" stroke="#C9BEB4" stroke-width="2"/>
+        <text class="pxG" x="246" y="264">THE OVERRIDE LOG</text>
+        <text class="pxM" x="246" y="284">every override, its stated reason, and the outcome</text>
+        <path class="pxFeed" d="M540,240 L540,192"/>
+        <path class="pxFeed" d="M330,240 L330,192"/>
+
+        <rect x="20" y="332" width="14" height="14" rx="3" fill="#C0562A"/>
+        <text class="pxN" x="44" y="344">The model proposes. The rep disposes. Every override is logged with a reason, no exceptions.</text>
+        <rect x="20" y="360" width="14" height="14" rx="3" fill="#C0562A"/>
+        <text class="pxN" x="44" y="372">Over one quarter that log becomes the best coaching artifact a sales leader owns.</text>
+        <rect x="20" y="388" width="14" height="14" rx="3" fill="#C0562A"/>
+        <text class="pxN" x="44" y="400">No feedback arrow means no learning. The model repeats last quarter's mistakes forever.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - signals in, model number, logged override, committed number, outcome back into the log</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The override log: four columns, one quarter, enormous value<span class="mini">5 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>You do not need a product for this. A shared tab started this week will beat any tool bought next quarter, because the value sits in the accumulated reasons rather than the interface.</p>
+        <div class="steps">
+          <div class="step"><p><strong>1 · The deal and both numbers.</strong> Model said, rep called. The delta is the interesting part.</p></div>
+          <div class="step"><p><strong>2 · The reason, in the rep's own words.</strong> Free text. "Their CFO confirmed the budget line on Tuesday." Never "rep judgment".</p></div>
+          <div class="step"><p><strong>3 · What actually happened.</strong> Filled in at quarter end and never before. Won, slipped or lost, and at what value.</p></div>
+          <div class="step"><p><strong>4 · The verdict.</strong> Right, wrong, or right for the wrong reason. That last category teaches you the most.</p></div>
+        </div>
+        <p>After one quarter you can answer questions no dashboard will answer for you: which reps override well and can be trusted, which override on hope, which reasons predict reliably across the whole team (procurement freeze almost always right, "they told me they love it" almost always wrong), and where the model is systematically blind so you can tell the vendor something specific instead of "it feels off".</p>
+        <p>The log only works if reps write in it honestly, which means it can never be used to ambush them. Review the reasons in aggregate before you look at individuals, and praise a good override that lost - a sound call with a bad outcome is still a sound call, and rewarding only outcomes gets you outcome-chasing.</p>
+        <div class="prompt-box good">
+          <span class="label">Prompt that works - patterns, not verdicts on people</span>
+          <pre>Below is our forecast override log for Q3: deal, model number, rep-called
+number, the rep's written reason, and the actual outcome.
+
+Group the reasons into themes. For each theme give me:
+- how many times it was used
+- how often the override landed closer to actual than the model did
+- one example entry, quoted
+
+Then list the themes where reps were reliably right and the themes where
+they were reliably wrong. Do not rank or score individual reps.</pre>
+        </div>
+        <div class="prompt-box bad">
+          <span class="label">Prompt that ends the honest logging</span>
+          <pre>Analyse our override log and rank the reps by forecast accuracy.
+Tell me which reps I should not trust with their own commit number.</pre>
+        </div>
+        <p>The second produces a leaderboard, the leaderboard produces careful reps, and careful reps write "rep judgment" in the reason field forever. You will have destroyed the asset in one meeting.</p>
+        <div class="callout tip">
+          <strong>Make the reason mandatory, make the number easy</strong>
+          If a rep can change the number without typing a reason, you will get numbers without reasons and an empty log by week three. Reverse the friction: overriding is one click, but the field that unlocks it is the sentence.
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: THE GOODHART TRAP ============ -->
+  <section class="section" id="goodhart">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · the trap waiting for you</span>
+      <h2>The Goodhart trap <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">Goodhart's law: when a measure becomes a target, it stops being a good measure. Forecast accuracy is the most gameable metric in sales leadership, and the moment you celebrate it publicly your team will get very good at it in the worst possible way.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>How accuracy gets gamed, and the three-metric countermeasure<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <div class="steps">
+          <div class="step"><p>You announce that forecast accuracy is now a tracked metric. Reasonable. Everyone nods.</p></div>
+          <div class="step"><p>Reps work out that the safest route to accuracy is to call small. A commit you are certain of is a commit you have already collected.</p></div>
+          <div class="step"><p>Accuracy improves, genuinely, and your dashboard turns green. Meanwhile pipeline coverage falls, because nobody is now incentivised to carry an uncertain deal in the number at all.</p></div>
+          <div class="step"><p>Managers begin spending pipeline reviews managing the <em>forecast</em> rather than the <em>deals</em>. Nobody notices for two quarters.</p></div>
+          <div class="step"><p>The number is now extremely accurate and considerably smaller than the business you could have had.</p></div>
+        </div>
+        <p><strong>The countermeasure is not a cleverer accuracy metric.</strong> It is scoring three things together, so that gaming one visibly damages another:</p>
+        <ul>
+          <li><strong>Forecast accuracy</strong> - how close the commit landed to actual.</li>
+          <li><strong>Pipeline coverage</strong> - are you carrying enough to make the number at all? Sandbagging shrinks this.</li>
+          <li><strong>Slipped-deal rate</strong> - how many deals moved out rather than closed. Stage inflation inflates this.</li>
+        </ul>
+        <p>Any one can be gamed. All three at once is close to just doing the job properly. And the rail underneath it all: <strong>never compensate on forecast accuracy alone.</strong> The moment accuracy touches pay you have converted your forecast from an estimate into a negotiation with money attached, and you will never see an honest number again.</p>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>This is the trust line, applied to a number.</strong> Rep session b1 sets the rule that three things stay human: the read, the promise and the price. A committed number is a promise - a person telling their leader what they will deliver, and that leader telling the board the same. AI can propose the number, weigh the signals and flag the deals that do not smell right. It cannot make the promise, because a promise is only worth something when someone can be held to it.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Stage definitions that mean something<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Stage inflation is a definition problem before it is a behaviour problem. A stage defined by <em>what you did</em> can always be claimed. A stage defined by <em>what they did</em> cannot.</p>
+        <table class="clean">
+          <thead><tr><th>Stage</th><th>The soft definition (gameable)</th><th>The exit criterion (evidence)</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Discovery</strong></td><td>"We had a good first call"</td><td>Named pain in the buyer's words, a second contact identified, and a next meeting on the calendar</td></tr>
+            <tr><td><strong>Evaluation</strong></td><td>"We did the demo"</td><td>They confirmed the problem is worth solving this year and told you who else must be involved</td></tr>
+            <tr><td><strong>Proposal</strong></td><td>"I sent pricing"</td><td>They came back on the pricing - questions, redlines or a counter. Silence is not this stage</td></tr>
+            <tr><td><strong>Negotiation</strong></td><td>"They are keen"</td><td>Procurement or legal is engaged, and there is a decision date they said out loud</td></tr>
+          </tbody>
+        </table>
+        <p>Write yours as exit criteria, not entry feelings, and make every criterion an observable act by the <em>buyer</em>. Then let the model score conversion by stage and it will finally be measuring something stable.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 4: THE PLAYBOOK ============ -->
+  <section class="section" id="playbook">
+    <div class="section-kicker">
+      <span class="klabel">Part 4 · what to do on Monday</span>
+      <h2>The forecast leader's playbook <span class="tag exercise">◐ read after class</span></h2>
+    </div>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The deals you should kill, and why AI is unusually good at finding them<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Zombie deals are the tax nobody budgets for: they consume rep attention, inflate coverage, and make every pipeline review longer and less honest. Humans are bad at killing them because each one carries a sunk cost and a small hope. A model has neither.</p>
+        <ul>
+          <li><strong>No inbound activity in 21 days at a late stage.</strong> Not "we emailed them" - no reply <em>from</em> them. One-way activity is not a deal, it is a hobby.</li>
+          <li><strong>Single-threaded past evaluation.</strong> One contact at proposal stage means the deal ends the day that person's priorities change, and you will hear about it afterwards.</li>
+          <li><strong>Stage age well beyond the segment median.</strong> A deal sitting at three times the usual stage age is not slow, it is stuck, and the honest move is to name it.</li>
+          <li><strong>Slipped twice.</strong> Once is a timing problem. Twice is a qualification problem you have been carrying since discovery.</li>
+        </ul>
+        <p><strong>Killing is not deleting.</strong> Move it to a nurture state with a dated reason and a re-engagement trigger. The point is to get it out of the commit and out of the rep's head, not to pretend it never existed. A good share of them come back next year with a real budget.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>When the model disagrees with a rep you trust<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>This moment decides whether your team believes in the system, and it will arrive in your first month. Your best rep calls a deal at full value, the model calls it at a quarter, and everyone is watching what you do.</p>
+        <div class="steps">
+          <div class="step"><p><strong>Ask which signal the model is reacting to</strong>, out loud, before anyone defends anything. It is usually one thing: stage age, a single thread, or a fortnight of silence.</p></div>
+          <div class="step"><p><strong>Ask the rep what they know that is not in the system.</strong> If the answer is a fact, the override is sound. If it is a feeling, you have found happy ears and this is now a coaching conversation.</p></div>
+          <div class="step"><p><strong>If it is a fact, get it into the system</strong> before the meeting ends. A fact only one rep knows is a single point of failure, and it is the reason the model was wrong in the first place.</p></div>
+          <div class="step"><p><strong>Take the override, log the reason, and say so publicly.</strong> Backing a good rep against the model in front of the team is what makes the log trustworthy. Overruling without a reason is what makes it theatre.</p></div>
+          <div class="step"><p><strong>Come back to it at quarter end</strong>, not to gloat in either direction, but to ask what the two of you learned about which signals mislead in your market.</p></div>
+        </div>
+        <p>Do this five times and your reps stop treating the model as a threat and start treating it as a colleague with a very narrow but very consistent point of view.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>A six-question forecast-call script<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Most forecast calls are a recitation of numbers everyone already read. These six questions turn the same 30 minutes into something that changes an outcome. Ask them per deal, in this order, and stop when you have your answer.</p>
+        <ul>
+          <li><strong>1 · What did the buyer do most recently?</strong> Not what you did. An act by them, with a date. If nobody can name one, the deal is not where the stage says it is.</li>
+          <li><strong>2 · Who else has been in the room?</strong> Names and functions. If the answer is one name past evaluation, that is the risk, not the price.</li>
+          <li><strong>3 · What has to be true for this to close this quarter?</strong> List the conditions, then ask which of them are already true today.</li>
+          <li><strong>4 · What would make you drop this to zero?</strong> Reps find it far easier to name the kill condition than to admit a deal is weak. It is the same information.</li>
+          <li><strong>5 · The model says X and you say Y. What do you know that it does not?</strong> A fact goes in the log. A feeling gets coached.</li>
+          <li><strong>6 · What is the next step and who owns it?</strong> If the next step is "follow up", there is no next step. Get a date and a named person on their side.</li>
+        </ul>
+        <p>Six questions, three or four minutes per deal, no slide deck. The point of the call is not to collect the forecast - the system already has it. The point is to test it.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Before session 4 <span class="tag exercise">◐ 60-90 min total</span></h2>
+    </div>
+    <ul>
+      <li>Pull last quarter and build one table: for every deal over your threshold, the rep-called number, the model number if you have one, and the actual. Sort by the size of the gap. The top ten rows are your next three coaching conversations.</li>
+      <li>Start the override log this week - four columns, a shared tab, a mandatory reason field. Do not wait for a tool, a project or a RevOps cycle. You are collecting reasons, and the collection has to start before it can be useful.</li>
+      <li>Write exit criteria for two stages, in observable buyer acts, and test them against ten live deals. Count how many are sitting in a stage they have not actually earned.</li>
+      <li>Check your comp plan and your dashboards for any place forecast accuracy stands alone. Pair it with pipeline coverage and slipped-deal rate, or take it out.</li>
+      <li>Answer the course question: AI is giving your sellers back close to five hours a week. In your team, where did those hours go last quarter, and can you prove it?</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">This session teaches the forecasting core that survives a tool swap: what a model can read, what a human must supply, and the incentive structures that decide whether either is honest. Vendor forecasting certifications stay with the vendors. This page covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">AI forecast signals versus rep judgment - the five inputs and what only a human knows</span><span class="note">Part 2 · the contract the whole session rests on</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Sandbagging, happy ears and stage inflation - the three human forces</span><span class="note">Part 1 · with the data fingerprint of each</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The override log as a coaching artifact</span><span class="note">Part 2 · four columns, and the prompt that reads it safely</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The Goodhart trap on forecast accuracy, and the three-metric countermeasure</span><span class="note">Part 3 · never compensate on accuracy alone</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Stage definitions and exit criteria</span><span class="note">Part 3 self-study · rep session b9 runs the seller's version</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">The trust line - the read, the promise, the price</span><span class="note">Part 3 · established in rep session b1, applied here to the commit</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">CRM data quality as the precondition for any model</span><span class="note">Part 0 · rep session b8 is the working version</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · A rep overrides the model down to zero because the champion resigned. What must happen for that override to be worth anything next quarter?</p>
+      <button class="qopt" type="button">A · The model is retrained immediately on this single deal</button>
+      <button class="qopt" type="button">B · The manager splits the difference between the two numbers</button>
+      <button class="qopt" type="button">C · The reason is written in the rep's own words and the actual outcome is recorded against it</button>
+      <p class="qwhy">An override without a logged reason teaches nobody anything - you cannot tell later whether the rep knew something or guessed. Reason plus outcome is what turns a quarter of overrides into a pattern you can coach on, and it is the only way to find out where the model is systematically blind.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">2 · You make forecast accuracy your headline metric and it improves sharply. What is the most likely thing that also happened?</p>
+      <button class="qopt" type="button">A · The model got better at reading multithreading</button>
+      <button class="qopt" type="button">B · Reps learned to call small, pipeline coverage fell, and teams began managing the forecast rather than the deals</button>
+      <button class="qopt" type="button">C · Stage age dropped across the board</button>
+      <p class="qwhy">Goodhart's law in its purest sales form. The safest route to accuracy is a small, certain commit, so accuracy rises while coverage quietly falls. The countermeasure is to score accuracy, pipeline coverage and slipped-deal rate together, and never to compensate on accuracy alone.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · Which of these is a signal an AI forecast can genuinely read on its own?</p>
+      <button class="qopt" type="button">A · Stage age, and how many contacts in how many functions are engaged</button>
+      <button class="qopt" type="button">B · That procurement has frozen all spend until the audit closes</button>
+      <button class="qopt" type="button">C · That the budget quietly moved to the next fiscal year</button>
+      <p class="qwhy">Activity recency, stage age, multithreading, sentiment and historical conversion by stage are what the model reads. The other two are things a person heard and must type in. That asymmetry is exactly why the override exists, and why the reason field is mandatory.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Leader session 3 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Three forces, not one bug</b><span>Sandbagging protects the number, happy ears believes the champion, stage inflation calls a demo a deal. AI removes none of them, it makes all three measurable.</span></div>
+      <div class="cheat-item"><b>What the model reads</b><span>Activity recency · stage age · multithreading · email and call sentiment · historical conversion by stage. That is the whole list.</span></div>
+      <div class="cheat-item"><b>What only a human knows</b><span>People changes, money changes, process changes, and the thing said off the record. None of it exists until a person types it.</span></div>
+      <div class="cheat-item"><b>The contract</b><span>The model proposes, the rep disposes, and every override is logged with a reason in the rep's own words.</span></div>
+      <div class="cheat-item"><b>The override log</b><span>Deal and both numbers · the reason · what actually happened · right, wrong, or right for the wrong reason. Four columns, one quarter, enormous value.</span></div>
+      <div class="cheat-item"><b>The Goodhart trap</b><span>Score accuracy alone and reps call small. Score accuracy AND pipeline coverage AND slipped-deal rate together. Never compensate on accuracy.</span></div>
+      <div class="cheat-item"><b>Stages that mean something</b><span>Exit criteria, not entry feelings. Every criterion is an observable act by the buyer, not by your rep.</span></div>
+      <div class="cheat-item"><b>The trust line, applied</b><span>A committed number is a promise, and a promise stays human. AI can propose it. Only a person can be held to it.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Leader session 3 of 6 · learn-ai-sales-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="a2-the-evidence.html">← Previous: The evidence</a> &nbsp;·&nbsp; <a href="a4-enablement-and-ramp.html">Next: Enablement, coaching and ramp →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>
